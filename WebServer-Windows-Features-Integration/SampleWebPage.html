@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 1. The meta tag below is used for install the cortana VCD file on device 
+         2. Use this <meta> tag in the home/master page of your web application
+    -->
+    
+    <meta name="msapplication-cortanavcd" content="http://<path to vcd file>/vcd.xml" />
+ 
+
+</head>
+<body style="background-color:indigo">
+    
+        <div style="color:white;font-size:24px;font-family:'Segoe UI'">This is sample web page, just like a website would have.</div>
+
+    <!--This needs to be registered before DOMContentLoaded event is fired. Needs to be only referenced within home/master page. -->
+<script src="js\VoiceCommandHandler.js" />    
+
+    <!-- Back button : This file handled hardware back button Windows Phone and the software back button on tablet/PCs running in tablet mode. 
+        This experience is necessary, as tapping the back button while ruuning as an App [packaged through Project Westminster], will exit your app if this is not implemented
+        Refer this JS in every web page file before DOMContentLoaded. I found that it works for me just before the </body>
+    -->
+
+<script src="js\backbutton.js" />
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+﻿/*styling for the offline page */
+
+body {
+    background-color: indigo;
+}
+
+.message{
+    
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    
+    
+}
